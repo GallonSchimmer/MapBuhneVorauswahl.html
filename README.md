@@ -34,7 +34,7 @@ When a city is selected, the corresponding venue and image are automatically upd
 ## Condition in Survey Admin
 To ensure the image question appears only when a city has been selected, use the following condition in your survey admin settings:
 ```
-(( ! is_empty(city.NAOK)))
+(!is_empty(city.NAOK))
 ```
 This condition checks that the city field is not empty before displaying the image question.
 
